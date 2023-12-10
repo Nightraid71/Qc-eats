@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="sign in.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+</head>
+<body>
+
+  <!-------Nav-------->
+  <nav class="nav">
+    <div class="nav-container">
+      <ul>
+        <li class = "navbutton"><button class="nav-btn open-btn">
+          <i class="fas fa-bars"></i></button></li>
+        <li class = "logo" ><a href="index.html"><img src = QC_EATS.png></a></li> <!--image logo-->
+      </ul>
+    </div>
+  </nav>
+  <!--Side Nav Bar-->
+  <div class = nav2>
+    <div class="nav2 nav2-black">
+      <div class="nav2 nav2-red">
+        <div class="nav2 nav2-white">
+          <button class="nav-btn close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <img src="QC_EATS.png" class="logo2">
+          <ul class="list">
+            <li><a href="sign in.html">Sign In</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurant.html">Restaurants</a></li>
+            <li><a href="premium.html">QCEATS Premium</a></li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class =layout>
+    <div class="container">
+        <h2>What's your email or phone number?</h2>
+        <form id="signInForm" action="'/process'" method="post">
+            <input type="text" id="emailPhoneInput" name="emailPhoneInput" placeholder="Enter phone number or email" />
+            <button class="ripple" type="submit" id="continueButton">Continue
+                <span class="circle" style="top: 0px;" left="5px"></span>
+            </button>
+        </form>
+
+        <div class="separator">
+            <div class="separator-line"></div>
+            <div class="separator-text">OR</div>
+            <div class="separator-line"></div>
+        </div>
+
+        <div class="social-buttons">
+            <div class="social-button" style="background-color: #4285F4; color: #fff;">
+                <img class="social-logo" src="google logo.png" alt="Google Logo">
+                Continue with Google
+            </div>
+            <div class="social-button" style="background-color: #000; color: #fff;">
+                <img class="social-logo" src="Apple-logo-black-and-white.png" alt="Apple Logo">
+                Continue with Apple
+            </div>
+            <div class="social-button" style="background-color: #4267B2; color: #fff;">
+                <img class="social-logo" src="facebook logo.png" alt="Facebook Logo">
+                Continue with Facebook
+            </div>
+        </div>
+
+        <div class="separator">
+            <div class="separator-line"></div>
+            <div class="separator-text">OR</div>
+            <div class="separator-line"></div>
+        </div>
+
+        <div class="log-in-with-qr-code">
+            <!-- Button to open the QR code popup -->
+            <button onclick="openPopup()">
+                <img src="qr logo.png" alt="Logo" class="button-logo"> Continue with QR Code
+            </button>
+        </div>
+
+    <div class="customization">
+            <p class="customization-text">Thank you for choosing Qc Eats as your delivery platform.</p>
+            <p class="customization-text">If you have any questions or concerns, please contact us at the following. </p>
+
+            <p class="customization-text1">QcEats@banana.com</p>
+            <p class="customization-text1">123-456-7890</p>
+
+            <p class="customization-text">Qc Eats team: Rabsa Islam, Alexandra Chavez, Cody Frucht, Fahmida Khan, Rachel Archer 
+            </p>
+        </div>
+    </div>
+
+        <!-- Popup container -->
+        <div class="overlay" id="overlay" onclick="closePopup()"></div>
+        <div class="popup" id="popup">
+            <!-- Close button for the popup -->
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+
+            <!-- QR code content goes here -->
+            <div class="qr-code">
+                <p> Thank you for choosing Qc Eats</p>
+                <img src="qc eats qr code.png" alt="QR Code">
+
+            </div>
+
+        </div>
+  </section>
+  <hr>
+          <div class = "footercontainer">
+              <div class = "foot">
+                 <img id = "logofoot" src = QC_EATS.png>
+              </div>
+              <div class = "foot">
+                  <table>
+                      <tr>
+                          <td>
+                              <a>Get Help</a>
+                          </td>
+                          <td>
+                              <a>Buy gift cards</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <a>Add your restaurant</a>
+                          </td>
+                          <td>
+                              <a>Sign up to deliver</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <a>Create a business account</a>
+                          </td>
+                          <td>
+                              <a>Promotions</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <a>Restaurants near me</a>
+                          </td>
+                          <td>
+                              <a>View all countries</a>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <a>Pick up near me</a>
+                          </td>
+                          <td>
+                              <a>About QC Eats</a>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+          <hr>
+          <div class = "morefooter">
+              <div class = "moref">
+                  <img class = socials src = fb.jpg>
+                  <img class = socials src = x.jpg>
+                  <img class = socials src = ig.jpg>
+              </div>
+          <div class = infolinks>
+              <div class = "moref">
+                  <a>Privacy Policy</a>
+                  <a>Terms</a>
+                  <a>Pricing</a>
+                  <a>Do not sell or share my personal information</a>
+              </div>
+              </div>
+          </div>
+
+
+        <script src="sign in.js"></script>
+</body>
+</html>
