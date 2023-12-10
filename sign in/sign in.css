@@ -1,0 +1,525 @@
+* {
+    box-sizing: border-box;
+}
+
+.layout {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Change entire webpage background to white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  margin-top: 10px;
+}
+
+/* Header styles */
+.nav-container {
+  margin: 0 auto;
+
+}
+
+
+
+
+.nav {
+  background-color: white;
+  box-shadow: 2px 2px 2px rgb(198, 196, 196);
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  width: 100%;
+}
+
+
+.nav img{
+  height: 80px;
+
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav li{
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.nav a {
+  color:black;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: #000;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav input{
+  border-radius: 30px; 
+
+}
+
+
+
+
+.nav input{
+  border: white;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+
+input#sign{
+  background-color: black;
+  color: white;
+}
+
+ input#sign:hover {
+  background-color: grey;
+  color: black;
+}
+
+
+
+.nav input:hover, .intro button {
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+}
+
+input#log{
+  height: 30px;
+  width: 90px;
+  justify-content: center;
+  font-size: 12px;
+}
+input#sign{
+  font-size: 12px;
+  float: right;
+  height: 30px;
+  width: 90px;
+  justify-content: center;
+  background-color: rgb(207,23,23);
+  color: white;
+}
+
+.logsign{
+  margin-left: 900px;
+  display: flex;
+}
+
+
+.text {
+  text-transform: uppercase;
+}
+
+.logo2 {
+  width: 200px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.open-btn {
+
+  top: 40px;
+  left: 30px;
+
+}
+
+.nav2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+
+.nav2.visible {
+  transform: translateX(0);
+}
+
+.nav2-black {
+  background-color: rgb(34, 31, 31);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+
+.nav2-black.visible {
+  transition-delay: 0s;
+}
+
+.nav2-red {
+  background-color: rgb(230, 65, 74);
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav2-red.visible {
+  transition-delay: 0.2s;
+}
+
+.nav2-white {
+  background-color: #fff;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.nav2-white.visible {
+  transition-delay: 0.4s;
+}
+
+.close-btn {
+  opacity: 0.3;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: rgb(34, 31, 31);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
+
+}
+
+.container {
+    background-color: rgb(239, 74, 74); /* Change container color to lighter gray */
+    color: white; /* Change text color to medium gray */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 50%; /* Set the container to take up 50% of the width */
+    max-width: 400px;
+    margin-top: 40px; /* Lower the container */
+    height: auto;
+}
+
+#emailPhoneInput {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 2px lightgrey solid; /* Change border color to dark gray */
+    display: block;
+    font-size: 18px;
+}
+
+.customization {
+    background-color: inherit; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin-top: 20px; 
+}
+
+.customization-text {
+    color: #333;
+    font-weight: bold; 
+    line-height: 2.0; 
+}
+.customization-text1 {
+    color: black; /* Replace with the color you want for these specific paragraphs */
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 8px; /* Adjust the margin to add more space between lines */
+}
+.customization-text1 {
+    cursor: pointer; 
+}
+
+.customization-text1:hover {
+    text-decoration: underline; 
+    font-size: 130%; /* Increase the font size on hover */
+}
+
+#continueButton {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    overflow: hidden; /* Hide the overflow of the circle */
+}
+
+#continueButton:focus {
+    outline: none;
+}
+
+#continueButton .circle {
+    position: absolute;
+    background-color: rgb(207,23,23);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 3s ease-out;
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
+
+
+.separator {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.separator-line {
+    flex: 1;
+    height: 1px;
+    background-color: black;
+}
+
+.separator-text {
+    padding: 0 20px;
+    color: black;
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid rgb(239, 74,74);
+    border-radius: 4px;
+}
+
+.social-logo {
+    margin-right: 10px;
+    max-width: 24px; /* Adjust the size of the logo */
+    max-height: 24px; /* Adjust the size of the logo */
+}
+
+.qr-code {
+    margin-top: 20px;
+}
+
+.log-in-with-qr-code {
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    text-align: left; /* Align text to the left */
+}
+
+.log-in-with-qr-code button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    text-align: left;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.button-logo {
+    max-width: 24px; /* Adjust the size of the logo */
+    max-height: 24px; /* Adjust the size of the logo */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+
+.log-in-with-qr-code button:focus {
+    outline: none;
+}
+
+.log-in-with-qr-code button .circle {
+    position: absolute;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 2s ease-out;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 80%; /* Adjust the maximum width if needed */
+    max-height: 80vh; /* Adjust the maximum height if needed */
+    overflow: auto; /* Add scrollbar if the content overflows */
+}
+
+.qr-code {
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Center the content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+}
+
+.qr-code img {
+    width: 40%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Style for the overlay background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Style for the close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*footer*/
+
+.footercontainer{
+  display: flex;
+  gap: 400px;
+
+}
+
+
+table{
+  border-spacing: 30px;
+}
+
+td{
+  padding: 5px;
+}
+
+.foot img{
+  height: 175px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.morefooter{
+  display: flex;
+  column-gap: 60px;
+  padding-bottom: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.moref{
+  display: flex;
+  column-gap: 20px;
+  text-align: center;
+}
+
+.infolinks{
+  margin-left: 100px;
+  cursor: pointer;
+}
+.socials{
+  height: 30px;
+  cursor: pointer;
+}
+
+.moref a{
+  font-size: 15px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.end p {
+  font-size: 13px;
+  text-align: right;
+  margin-top: 5rem;
+  margin-left: 2000px;
+}
