@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"/>
+  <link rel="stylesheet" href="Bakery.css"/>
+  <link rel="stylesheet" href="lightbox.css" />
+  <script src="lightbox_data.js" defer></script>
+  <script src="Bakery.js" defer></script>
+</head>
+
+<body>
+  
+  <button class="nav-btn open-btn">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="nav nav-black">
+    <div class="nav nav-red">
+      <div class="nav nav-white">
+        <button class="nav-btn close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <img src="qceats.png"
+          alt="Logo" class="logo">
+
+        <ul class="list">
+          <li><a href="#">Sign In</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="restaurant.html">Restaurants</a></li>
+          <li><a href="premium.html">QCEATS Premium</a></li>
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <article>
+  
+  <body>
+  <h1 style="text-align:center">Martha's Country Bakery</h1>
+  
+
+  <div class="row">
+    <div class="column">
+      <img src="OreoCheesecake.png" onclick="openLightbox()" class="hover">
+    </div>
+    <div class="column">
+      <img src="strawberryShortcake.png" onclick="openLightbox()" class="hover">
+    </div>
+    <div class="column">
+      <img src="Tiramisu.png"  onclick="openLightbox()" class="hover">
+    </div>
+    <div class="column">
+      <img src="ChocolateCake.png" onclick="openLightbox()" class="hover">
+    </div>
+  </div>
+
+  <div id="lightbox" class="box">
+    <span class="close cursor" onclick="closeLightbox()">&times;</span>
+    <div class="box-content">
+
+      <div class="slidesImage">
+        <div class="number">1 / 4</div>
+        <img src="OreoCheesecake.png">
+      </div>
+
+      <div class="slidesImage">
+        <div class="number">2 / 4</div>
+        <img src="strawberryShortcake.png">
+      </div>
+
+      <div class="slidesImage">
+        <div class="number">3 / 4</div>
+        <img src="Tiramisu.png">
+      </div>
+
+      <div class="slidesImage">
+        <div class="number">4 / 4</div>
+        <img src="ChocolateCake.png">
+      </div>
+
+      <a class="prev" onclick="prevNext(-1)">&#10094;</a>
+      <a class="next" onclick="prevNext(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="column1" src="OreoCheesecake.png"  alt="Oreo Cheesecake">
+      </div>
+      <div class="column">
+        <img class="column1" src="strawberryShortcake.png" alt="Strawberry Shortcake">
+      </div>
+      <div class="column">
+        <img class="column1" src="Tiramisu.png"  alt="Tiramisu">
+      </div>
+      <div class="column">
+        <img class="column1" src="ChocolateCake.png" alt="Chocolate Cake">
+      </div>
+    </div>
+  </div>
+    
+    <section id="menu">
+      <div class="menu-heading">
+          <span></span>
+          <h3>Desserts</h3>
+      </div>
+      <div class="menu-container">
+        <div class="menu-box">
+
+        <div class="menu-img">
+          <img src="ChocolateCake.png" alt="Chocolate Cake">
+        </div>
+        <div class="menu-text">
+
+          <a href="#" class="menu-title">Chocolate Cake</a>
+          <p>Chocolate cake with layers of chocolate mousse</p>
+          <a href="#">$7.00</a>
+
+        </div>
+        </div>
+        <div class="menu-box">
+
+        <div class="menu-img">
+          <img src="RedVelvetCaake.png" alt="Red Velvet Cake">
+        </div>
+        <div class="menu-text">
+
+          <a href="#" class="menu-title">Red Velvet Cake</a>
+          <p>Red velvet cake with cream cheese frosting</p>
+          <a href="#">$7.00</a>
+
+        </div>
+        </div>
+        <div class="menu-box">
+
+        <div class="menu-img">
+          <img src="CarrotCake.png" alt="CarrotCake">
+        </div>
+        <div class="menu-text">
+
+          <a href="#" class="menu-title"> Carrot Cake</a>
+          <p>Carrot cake with walnuts and creeam cheese frosting </p>
+          <a href="#">$7.00</a>
+
+        </div>
+        </div>
+          <div class="menu-heading">
+            <span></span>
+
+          </div>
+      <div class="menu-container">
+      <div class="menu-box">
+
+      <div class="menu-img">
+          <img src="OreoCheesecake.png" alt="Oreo Cheesecake">
+      </div>
+      <div class="menu-text">
+          
+          <a href="#" class="menu-title">Oreo Cheesecake</a>
+          <p>Cheesecake with oreos mixed in and aa layer of chocolate cake</p>
+          <a href="#">$7.00</a>
+
+      </div>
+    </div>
+    <div class="menu-box">
+
+      <div class="menu-img">
+          <img src="strawberryShortcake.png" alt="Strawberry Shortcake">
+      </div>
+      <div class="menu-text">
+          
+          <a href="#" class="menu-title">Strawberry Shortcake</a>
+          <p>Vanilla cake with layers of strawberries and whipped cream</p>
+          <a href="#">$7.00</a>
+
+      </div>
+    </div>
+         
+    <div class="menu-box">
+
+      <div class="menu-img">
+          <img src="Tiramisu.png" alt="Tiramisu">
+      </div>
+      <div class="menu-text">
+          
+          <a href="#" class="menu-title">Tiramisu</a>
+          <p>Lady finger cookies soaked in espresso with layers of mascarpone cheese filling and cocoa powder </p>
+          <a href="#">$7.50</a>
+
+      </div>
+    </div>
+
+    </div>
+        <div class="menu-container">
+          
+          <div class="menu-box">
+
+          <div class="menu-img">
+            <img src="BerryNapoleon.png" alt="BerryNapoleon">
+          </div>
+          <div class="menu-text">
+            
+            <a href="#" class="menu-title">Berry Napoleon</a>
+            <p>Layers of puff pastry with napoleon cream, bluberries, raspberries, strawberries and blackberries</p>
+            <a href="#">$8.00</a>
+
+          </div>
+          </div>
+          <div class="menu-box">
+
+          <div class="menu-img">
+            <img src="MixedBerryTart.png" alt="Mixed Berry Tart">
+          </div>
+          <div class="menu-text">
+            
+            <a href="#" class="menu-title">Mixed Berry Tart</a>
+            <p>A shortcrust pastry with a layer of pastry cream, strawberries, bluberries and kiwis </p>
+            <a href="#">$18.00</a>
+
+          </div>
+          </div>
+          <div class="menu-box">
+
+          <div class="menu-img">
+            <img src="Crossiants.png" alt="Crossiants">
+          </div>
+          <div class="menu-text">
+            
+            <a href="#" class="menu-title">Crossiants</a>
+            <p>Variety of crossiants, chocolate, almond, etc. </p>
+            <a href="#">$4.00</a>
+
+          </div>
+          </div>
+          <div class="menu-box">
+
+          <div class="menu-img">
+            <img src="Cookies.png" alt="Cookies">
+          </div>
+          <div class="menu-text">
+
+            <a href="#" class="menu-title">Cookies</a>
+            <p>Variety of cookies, chocolate chip, oatmeal, etc. </p>
+            <a href="#">$3.00</a>
+
+          </div>
+          </div>
+          <div class="menu-box">
+
+          <div class="menu-img">
+            <img src="Muffins.png" alt="Muffins">
+          </div>
+          <div class="menu-text">
+
+            <a href="#" class="menu-title">Muffins</a>
+            <p>Variety of muffins chocolate chip, blueberry, etc. </p>
+            <a href="#">$4.00</a>
+
+          </div>
+          </div>
+          <div class="menu-box">
+
+          <div class="menu-img">
+            <img src="ApplePie.png" alt="Pies">
+          </div>
+          <div class="menu-text">
+
+            <a href="#" class="menu-title">Pies</a>
+            <p>Variety of pies, apple crumb, pecan, etc. </p>
+            <a href="#">$7.00</a>
+
+          </div>
+          </div>
+      </div>
+    </section>
+    <!--footer-->
+    <hr>
+    <div class = "footercontainer">
+        <div class = "foot">
+           <img id = "logofoot" src = QC_EATS.png>
+        </div>
+        <div class = "foot">
+            <table>
+                <tr>
+                    <td>
+                        <a>Get Help</a>
+                    </td>
+                    <td>
+                        <a>Buy gift cards</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Add your restaurant</a>
+                    </td>
+                    <td>
+                        <a>Sign up to deliver</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Create a business account</a>
+                    </td>
+                    <td>
+                        <a>Promotions</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Restaurants near me</a>
+                    </td>
+                    <td>
+                        <a>View all countries</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Pick up near me</a>
+                    </td>
+                    <td>
+                        <a>About QC Eats</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class = "morefooter">
+        <div class = "moref">
+            <img class = socials src = fb.jpg>
+            <img class = socials src = x.jpg>
+            <img class = socials src = ig.jpg>
+        </div>
+    <div class = infolinks>
+        <div class = "moref">
+            <a>Privacy Policy</a>
+            <a>Terms</a>
+            <a>Pricing</a>
+            <a>Do not sell or share my personal information</a>
+        </div>
+        </div>
+    </div>
+    <div class = "copyright">
+    <p>&copy 2023 QC Eats Technologies Inc.</p>
+    </div>
+    <div class="bottom-bar">
+      <a href = "premium.html" id = premlink>Subscribe to QC Eats Premium to get a $0 delivery fee</a>
+  <script src="Bakery.js"></script>
+  <script src="lighbox_data.js"></script>
+</body>
+</html>
